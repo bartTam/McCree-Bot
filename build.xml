@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project default="create_jar" name="Create Runnable Jar for Project McCree.Bot">
+    <!--this file was created by Eclipse Runnable JAR Export Wizard-->
+    <!--ANT 1.7 is required                                        -->
+    <!--define folder properties-->
+    <property name="dir.buildfile" value="."/>
+    <property name="dir.workspace" value="${dir.buildfile}/.."/>
+    <property name="dir.jarfile" value="C:/Users/Bart/Desktop/McCreeBot"/>
+	<property name="version" value="0.3"/>
+    <target name="create_jar">
+        <jar destfile="${dir.jarfile}/McCreeBot${version}.jar" filesetmanifest="mergewithoutmain">
+            <manifest>
+                <attribute name="Main-Class" value="jesse.mccree.BotLauncher"/>
+                <attribute name="Class-Path" value="."/>
+            </manifest>
+            <fileset dir="${dir.buildfile}/target/classes"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/Users/Bart/.m2/repository/com/github/austinv11/Discord4j/2.5.4/Discord4j-2.5.4-shaded.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/Users/Bart/.m2/repository/org/slf4j/slf4j-api/1.7.12/slf4j-api-1.7.12.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/Users/Bart/.m2/repository/org/apache/httpcomponents/httpcore/4.4.4/httpcore-4.4.4.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/Users/Bart/.m2/repository/org/apache/httpcomponents/httpclient/4.5.1/httpclient-4.5.1.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/Users/Bart/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/Users/Bart/.m2/repository/commons-codec/commons-codec/1.9/commons-codec-1.9.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/Users/Bart/.m2/repository/org/apache/httpcomponents/httpmime/4.5.1/httpmime-4.5.1.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/Users/Bart/.m2/repository/commons-io/commons-io/2.4/commons-io-2.4.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/Users/Bart/.m2/repository/org/eclipse/jetty/websocket/websocket-client/9.3.8.v20160314/websocket-client-9.3.8.v20160314.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/Users/Bart/.m2/repository/org/eclipse/jetty/jetty-util/9.3.8.v20160314/jetty-util-9.3.8.v20160314.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/Users/Bart/.m2/repository/org/eclipse/jetty/jetty-io/9.3.8.v20160314/jetty-io-9.3.8.v20160314.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/Users/Bart/.m2/repository/org/eclipse/jetty/websocket/websocket-common/9.3.8.v20160314/websocket-common-9.3.8.v20160314.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/Users/Bart/.m2/repository/org/eclipse/jetty/websocket/websocket-api/9.3.8.v20160314/websocket-api-9.3.8.v20160314.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/Users/Bart/.m2/repository/net/jodah/typetools/0.4.6/typetools-0.4.6.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/Users/Bart/.m2/repository/org/apache/commons/commons-lang3/3.4/commons-lang3-3.4.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/Users/Bart/.m2/repository/com/google/code/gson/gson/2.6.2/gson-2.6.2.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/Users/Bart/.m2/repository/net/java/dev/jna/jna/4.2.1/jna-4.2.1.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/Users/Bart/.m2/repository/com/googlecode/soundlibs/mp3spi/1.9.5-1/mp3spi-1.9.5-1.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/Users/Bart/.m2/repository/com/googlecode/soundlibs/jlayer/1.0.1-1/jlayer-1.0.1-1.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/Users/Bart/.m2/repository/junit/junit/3.8.2/junit-3.8.2.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/Users/Bart/.m2/repository/org/jcraft/jorbis/0.0.17/jorbis-0.0.17.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/Users/Bart/.m2/repository/jflac/jflac/1.3/jflac-1.3.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/Users/Bart/.m2/repository/com/googlecode/soundlibs/tritonus-share/0.3.7-2/tritonus-share-0.3.7-2.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/Users/Bart/.m2/repository/org/tritonus/tritonus-dsp/0.3.6/tritonus-dsp-0.3.6.jar"/>
+        </jar>
+    </target>
+</project>
